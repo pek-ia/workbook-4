@@ -10,4 +10,8 @@ public class Room {
         this.numberOfBeds = numberOfBeds;
 
     }
+
+    boolean isAvailable(){
+        return isClean && !isOccupied;
+    }
 }
