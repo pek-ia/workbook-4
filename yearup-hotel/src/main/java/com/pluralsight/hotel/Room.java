@@ -4,6 +4,16 @@ public class Room {
     private boolean isClean;
     private boolean isOccupied;
 
+    public boolean isDownForMaintenance() {
+        return isDownForMaintenance;
+    }
+
+    public void setDownForMaintenance(boolean downForMaintenance) {
+        isDownForMaintenance = downForMaintenance;
+    }
+
+    private boolean isDownForMaintenance;
+
     public boolean isClean() {
         return isClean;
     }
@@ -31,6 +41,6 @@ public class Room {
     }
 
     public boolean isAvailable(){
-        return isClean && !isOccupied;
+        return isClean && !isOccupied && !isDownForMaintenance;
     }
 }
