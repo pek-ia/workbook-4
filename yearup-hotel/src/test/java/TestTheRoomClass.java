@@ -1,5 +1,7 @@
-public class HotelApp {
-    public static void main(String[] args){
+import com.pluralsight.hotel.Room;
+
+public class TestTheRoomClass {
+    public static void main(String[] args) {
 
         boolean isClean = true;
         boolean isOccupied = true;
@@ -13,17 +15,13 @@ public class HotelApp {
             System.out.println("Yay my code works");
         }
 
-        r.isOccupied = false;
-        r.isClean = true;
+        r.setOccupied(false);
+        r.setClean(true);
 
         isRoomAvailable = r.isAvailable();
         if (isRoomAvailable) {
             System.out.println("Yay my code works");
         }
-
-
-
-
 
     }
 }
