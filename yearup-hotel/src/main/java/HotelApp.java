@@ -13,6 +13,17 @@ public class HotelApp {
             System.out.println("Yay my code works");
         }
 
+        r.isOccupied = false;
+        r.isClean = true;
+
+        isRoomAvailable = r.isAvailable();
+        if (isRoomAvailable) {
+            System.out.println("Yay my code works");
+        }
+
+
+
+
 
     }
 }
