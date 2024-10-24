@@ -15,7 +15,11 @@ public class DonutFactory {
 
     double getPriceOfDonuts(int numberOfDonuts){
         double totalPrice =  numberOfDonuts * pricePerDonut;
-        if (numberOfDonuts >= 6){
+
+        if (numberOfDonuts % 12 == 0 ){
+            totalPrice = totalPrice - totalPrice*.2;
+        }
+        else if (numberOfDonuts >= 6){
             totalPrice -= totalPrice * .1;
         }
         return totalPrice;
